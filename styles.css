@@ -1,0 +1,172 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #eef1f6;
+  color: #1b1d2a;
+  margin: 0;
+  padding: 32px 16px;
+}
+
+.app {
+  max-width: 640px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+h2 {
+  margin: 0 0 14px;
+  font-size: 1.15rem;
+  color: #24345e;
+}
+
+.subtitulo {
+  margin: 6px 0 0;
+  color: #5d6277;
+}
+
+.cartao {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 22px;
+  box-shadow: 0 8px 24px rgba(36, 52, 94, 0.1);
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 12px;
+}
+
+label {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 1rem;
+  border: 2px solid #d4d7e2;
+  border-radius: 8px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #24345e;
+}
+
+button {
+  padding: 11px 18px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #ffffff;
+  background: #c2410c;
+}
+
+button:hover:not(:disabled) {
+  opacity: 0.9;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+button.secundario {
+  background: #ffffff;
+  color: #24345e;
+  border: 2px solid #24345e;
+  padding: 7px 14px;
+  font-size: 0.9rem;
+}
+
+.mensagem {
+  margin: 12px 0 0;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.mensagem:not(:empty) {
+  padding: 12px;
+}
+
+.mensagem.sucesso { background: #e3f5ea; color: #17804a; }
+.mensagem.erro { background: #fde8e6; color: #b42318; }
+.mensagem.info { background: #eef1f8; color: #24345e; }
+
+.titulo-lista {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.contador {
+  display: inline-block;
+  min-width: 26px;
+  padding: 2px 8px;
+  margin-left: 6px;
+  font-size: 0.85rem;
+  text-align: center;
+  color: #ffffff;
+  background: #24345e;
+  border-radius: 99px;
+}
+
+.estado {
+  color: #5d6277;
+  margin: 0;
+}
+
+.lista {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.cliente {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 14px;
+  border: 1px solid #e2e5ee;
+  border-radius: 10px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.info span {
+  color: #5d6277;
+  font-size: 0.9rem;
+  overflow-wrap: anywhere;
+}
+
+button.excluir {
+  background: #fde8e6;
+  color: #b42318;
+  padding: 8px 14px;
+  font-size: 0.9rem;
+  flex-shrink: 0;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Clientes</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app">
+    <header>
+      <h1>Cadastro de Clientes</h1>
+      <p class="subtitulo">Os dados são salvos na API do CrudCrud (POST, GET e DELETE).</p>
+    </header>
+
+    <section class="cartao">
+      <h2>Novo cliente</h2>
+      <form id="formulario" novalidate>
+        <div class="campo">
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" autocomplete="name" placeholder="Ex.: Maria Silva">
+        </div>
+        <div class="campo">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" autocomplete="email" placeholder="Ex.: maria@email.com">
+        </div>
+        <button type="submit" id="botao-salvar">Cadastrar</button>
+      </form>
+      <p id="mensagem" class="mensagem" aria-live="polite"></p>
+    </section>
+
+    <section class="cartao">
+      <div class="titulo-lista">
+        <h2>Clientes cadastrados <span id="contador" class="contador">0</span></h2>
+        <button type="button" id="atualizar" class="secundario">Atualizar</button>
+      </div>
+      <p id="estado-lista" class="estado">Carregando clientes…</p>
+      <ul id="lista-clientes" class="lista"></ul>
+    </section>
+  </main>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
